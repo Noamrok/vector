@@ -14,7 +14,7 @@ impl InternalEvent for LuaGcTriggered {
 }
 
 #[derive(Debug)]
-pub struct LuaScriptError {
+pub(crate) struct LuaScriptError {
     pub error: mlua::Error,
 }
 
