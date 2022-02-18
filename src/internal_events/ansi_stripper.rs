@@ -33,7 +33,7 @@ impl InternalEvent for AnsiStripperFieldMissingError<'_> {
 
 #[derive(Debug)]
 pub(crate) struct AnsiStripperFieldInvalidError<'a> {
-    pub field: &'a str,
+    pub(crate) field: &'a str,
 }
 
 impl InternalEvent for AnsiStripperFieldInvalidError<'_> {
