@@ -62,7 +62,7 @@ impl InternalEvent for AnsiStripperFieldInvalidError<'_> {
 
 #[derive(Debug)]
 pub(crate) struct AnsiStripperError<'a> {
-    pub field: &'a str,
+    pub(crate) field: &'a str,
     pub(crate) error: std::io::Error,
 }
 
