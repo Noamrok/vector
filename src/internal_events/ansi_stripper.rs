@@ -3,7 +3,7 @@ use metrics::counter;
 use vector_core::internal_event::InternalEvent;
 
 #[derive(Debug)]
-pub struct AnsiStripperFieldMissingError<'a> {
+pub(crate) struct AnsiStripperFieldMissingError<'a> {
     pub(crate) field: &'a str,
 }
 
