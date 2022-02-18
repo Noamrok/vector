@@ -115,7 +115,7 @@ impl InternalEvent for KubernetesLogsFormatPickerEdgeCase {
 }
 
 #[derive(Debug)]
-pub struct KubernetesLogsDockerFormatParseError<'a> {
+pub(crate) struct KubernetesLogsDockerFormatParseError<'a> {
     pub(crate) error: &'a dyn std::error::Error,
 }
 
